@@ -1,0 +1,4 @@
+name = "CalculusOfVariations"
+uuid = "33922b39-d0c9-4121-8f1f-33c1dad529cf"
+authors = ["Olivier Cots <olivier.cots@irit.fr>"]
+version = "0.1.0"
