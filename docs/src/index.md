@@ -1,5 +1,7 @@
 # Calculus of variations
 
+## Introduction
+
 Let consider $\mathcal{I}$ an open interval of $\mathbb{R}$, $\Omega$ an open set of $\mathbb{R}^n$ and 
 a continuous application 
 
@@ -56,3 +58,12 @@ with a slight abuse of notations since from the optimal control point of view, t
 generally on the state $x$ and the control $u$.
 
 You may find an example of such a problem [here](@ref catenoid).
+
+## Dependencies
+
+All the numerical simulations to generate this documentation are performed with the following packages.
+
+```@example
+using Pkg
+Pkg.status()
+```
