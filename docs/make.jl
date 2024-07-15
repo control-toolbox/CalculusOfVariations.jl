@@ -19,6 +19,6 @@ makedocs(
 )
 
 deploydocs(
-    repo = "github.com/control-toolbox/cov.git",
+    repo = "github.com/control-toolbox/calculus_of_variations.git",
     devbranch = "main"
 )
