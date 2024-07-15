@@ -1,0 +1,15 @@
+footer {
+    display: flex !important;
+    justify-content: center;
+    padding-top: 20px;
+    background-color: #007fa2;
+    color: #fff;
+    padding-bottom: 20px;
+    margin-top: 110px;
+    position: relative;
+    z-index: 1;
+}
+
+article#documenter-page.content{
+    min-height: 75vh;    
+}
