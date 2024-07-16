@@ -1,0 +1,16 @@
+@import "common.css";
+@import "multidoc.css";
+
+/*! do not display global search bar from MultiDocumenter in the nav menu */
+#multi-page-nav .search {
+    display: none!important;
+}
+
+#multi-page-nav {
+    background-color: #007fa2 !important;
+    border-bottom: none !important;
+}
+
+nav.docs-sidebar {
+    z-index: 1;
+}
