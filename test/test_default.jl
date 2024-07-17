@@ -1,4 +1,4 @@
 # test_default
 function test_default()
-     @test true
+     @test CalculusOfVariations.greet() isa Nothing
 end

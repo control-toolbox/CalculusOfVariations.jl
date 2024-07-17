@@ -1,4 +1,5 @@
 using Test
+using CalculusOfVariations
 
 #
 @testset verbose = true showtiming = true "Base" begin
