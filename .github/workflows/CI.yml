@@ -4,13 +4,14 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - runners-inria
+      - main
+      - develop
     tags: '*'
   pull_request:
 jobs:
   test:
     name: Julia ${{ matrix.version }} - ${{ matrix.os }} - ${{ matrix.arch }}
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         version:
