@@ -10,7 +10,7 @@ on:
   pull_request:
 jobs:
   test:
-    name: Julia ${{ matrix.version }} - ${{ matrix.os }} - ${{ matrix.arch }}
+    name: Julia-CI
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
