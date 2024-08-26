@@ -32,7 +32,7 @@ tf = 1
 x0 = 1
 xf = 2.5
 
-@def ocp begin
+ocp = @def begin
 
     t ∈ [ t0, tf ], time
     x ∈ R, state
@@ -244,10 +244,9 @@ for p0 ∈ p0s # plot for each p₀ in p0s
 
     flow_p0 = ocp_flow((t0, tf_), x0, p0; saveat=tspan, callback=cbt)
 
-    T = flow_p0.ode_sol.t
-    Z = flow_p0.(T)
-    X = [Z[i][1] for i in 1:length(T)]
-    P = [Z[i][2] for i in 1:length(T)]
+    T = tspan
+    X = flow_p0.state.(T)
+    P = flow_p0.costate.(T)
 
     plot!(plt_x, T, X;          color=:blue)
     plot!(plt_p, T, P;          color=:blue)
@@ -319,9 +318,8 @@ for (p0, label) ∈ zip(p0s, labels) # plot for each p₀ in p0s
     flow_p0 = ocp_flow((t0, tf), x0, p0; saveat=tspan)
 
     T = tspan
-    Z = flow_p0.(tspan)
-    X = [Z[i][1] for i in 1:N]
-    P = [Z[i][2] for i in 1:N]
+    X = flow_p0.state.(T)
+    P = flow_p0.costate.(T)
     
     plot!(plt2_x, T, X;         label=label)
     plot!(plt2_p, T, P;         label=label)
