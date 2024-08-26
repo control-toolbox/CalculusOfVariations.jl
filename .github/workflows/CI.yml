@@ -1,6 +1,7 @@
 # [.github/workflows/CI.yml]
 name: CI
 on:
+  workflow_dispatch:
   push:
     branches:
       - runners-inria
