@@ -5,9 +5,9 @@ makedocs(
     warnonly = :cross_references,
     sitename = "Calculus of variations",
     format = Documenter.HTML(
-        prettyurls = false, 
+        prettyurls = false,
         size_threshold_ignore = ["index.md"],
-        assets=[
+        assets = [
             asset("https://control-toolbox.org/assets/css/documentation.css"),
             asset("https://control-toolbox.org/assets/js/documentation.js"),
         ],
@@ -15,10 +15,10 @@ makedocs(
     pages = [
         "Introduction" => "index.md",
         "Catenoid solution" => "application-surface-revolution.md",
-    ]
+    ],
 )
 
 deploydocs(
     repo = "github.com/control-toolbox/calculus_of_variations.git",
-    devbranch = "main"
+    devbranch = "main",
 )
