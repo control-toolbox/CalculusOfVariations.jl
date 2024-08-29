@@ -1,5 +1,5 @@
 module CalculusOfVariations
 
-greet() = print("Hello World!")
+greet()   =    print("Hello World!")
 
-end # module CoV
+end
