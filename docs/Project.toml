@@ -10,7 +10,7 @@ Suppressor = "fd094767-a336-5f1f-9728-57cf17d0bbfb"
 [compat]
 Documenter = "1.6"
 ForwardDiff = "0.10"
-OptimalControl = "0.11"
+OptimalControl = "0.11, 0.12"
 OrdinaryDiffEq = "6.88"
 Plots = "1.40"
 Roots = "2.1"
