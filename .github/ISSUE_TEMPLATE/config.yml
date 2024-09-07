@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
   - name: Calculus of variations support
-    url: https://github.com/control-toolbox/calculus_of_variations/discussions
-    about: Please ask and answer questions about calculus_of_variations here.
+    url: https://github.com/control-toolbox/CalculusOfVariations.jl/discussions
+    about: Please ask and answer questions about CalculusOfVariations.jl here.
   - name: Control-toolbox organisation support
     url: https://github.com/orgs/control-toolbox/discussions
     about: For more general questions about control-toolbox ecosystem it's here.
