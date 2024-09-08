@@ -18,7 +18,6 @@ makedocs(;
     ],
 )
 
-deploydocs(
-    repo = "github.com/control-toolbox/CalculusOfVariations.jl.git",
-    devbranch = "main",
+deploydocs(;
+    repo="github.com/control-toolbox/CalculusOfVariations.jl.git", devbranch="main"
 )
