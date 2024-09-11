@@ -7,7 +7,7 @@ makedocs(;
     warnonly=:cross_references,
     sitename="Calculus of variations",
     format=Documenter.HTML(;
-        repolink = "https://"*repo_url,
+        repolink="https://" * repo_url,
         prettyurls=false,
         size_threshold_ignore=["index.md"],
         assets=[
@@ -21,6 +21,4 @@ makedocs(;
     ],
 )
 
-deploydocs(;
-    repo=repo_url*".git", devbranch="main"
-)
+deploydocs(; repo=repo_url * ".git", devbranch="main")
