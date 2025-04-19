@@ -245,13 +245,13 @@ for p0 ∈ p0s # plot for each p₀ in p0s
     flow_p0 = ocp_flow((t0, tf_), x0, p0; saveat=tspan, callback=cbt)
 
     T = tspan
-    X = flow_p0.state.(T)
-    P = flow_p0.costate.(T)
+    X = state(flow_p0).(T)
+    P = costate(flow_p0).(T)
 
-    plot!(plt_x, T, X;          color=:blue)
-    plot!(plt_p, T, P;          color=:blue)
-    plot!(plt_u, T, u.(X, P);   color=:blue)  
-    plot!(plt_phase, X, P;      color=:blue)
+    plot!(plt_x,     T, X;          color=:blue)
+    plot!(plt_p,     T, P;          color=:blue)
+    plot!(plt_u,     T, u.(X, P);   color=:blue)  
+    plot!(plt_phase, X, P;          color=:blue)
 
 end
 
@@ -318,13 +318,13 @@ for (p0, label) ∈ zip(p0s, labels) # plot for each p₀ in p0s
     flow_p0 = ocp_flow((t0, tf), x0, p0; saveat=tspan)
 
     T = tspan
-    X = flow_p0.state.(T)
-    P = flow_p0.costate.(T)
+    X = state(flow_p0).(T)
+    P = costate(flow_p0).(T)
     
-    plot!(plt2_x, T, X;         label=label)
-    plot!(plt2_p, T, P;         label=label)
-    plot!(plt2_u, T, u.(X, P);  label=label)  
-    plot!(plt2_phase, X, P;     label=label)
+    plot!(plt2_x,     T, X;         label=label)
+    plot!(plt2_p,     T, P;         label=label)
+    plot!(plt2_u,     T, u.(X, P);  label=label)  
+    plot!(plt2_phase, X, P;         label=label)
 
 end
 
