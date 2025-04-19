@@ -9,7 +9,7 @@ makedocs(;
     format=Documenter.HTML(;
         repolink="https://" * repo_url,
         prettyurls=false,
-        size_threshold_ignore=["index.md"],
+        size_threshold_ignore=["index.md", "application-surface-revolution.md"],
         assets=[
             asset("https://control-toolbox.org/assets/css/documentation.css"),
             asset("https://control-toolbox.org/assets/js/documentation.js"),
@@ -17,7 +17,7 @@ makedocs(;
     ),
     pages=[
         "Introduction" => "index.md",
-        "Catenoid solution" => "application-surface-revolution.md",
+        "Surface of revolution" => "application-surface-revolution.md",
     ],
 )
 
