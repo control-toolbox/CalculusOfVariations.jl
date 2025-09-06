@@ -237,7 +237,7 @@ uuid = "83423d85-b0ee-5818-9007-b63ccbeb887a"
 version = "1.18.5+0"
 
 [[deps.CalculusOfVariations]]
-path = "/home/runner/work/CalculusOfVariations.jl/CalculusOfVariations.jl"
+path = "/builds/actions-runner/_work/CalculusOfVariations.jl/CalculusOfVariations.jl"
 uuid = "33922b39-d0c9-4121-8f1f-33c1dad529cf"
 version = "0.2.2"
 
